@@ -4,3 +4,8 @@ f = open("/home/avmejia/TEC/AGO-DIC-21/TC1028/AD21TC1028.414/4-Ciclos/lista.csv"
 for alumno in f:
     print(type(alumno))
     print(alumno)
+    alumno = alumno[:len(alumno)-1]
+    if alumno == "Matricula;Correo":
+        print("verdadero")
+    else:
+        print("Falso")
